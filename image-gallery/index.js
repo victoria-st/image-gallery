@@ -10,7 +10,7 @@ async function getData() {
   getData();
 
   function showData(data) {
-    const div = `<div class="gallery-img" style="background-image: url(data[0].urls.regular);">`;
+    const div = `<div class="" style="background-image: url(${data[0].urls.regular});"></div>`;
   galleryContainer.insertAdjacentHTML("beforeend", div);
   }
 
