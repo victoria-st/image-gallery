@@ -5,13 +5,15 @@ async function getData() {
     const res = await fetch(url);
     const data = await res.json();
     console.log(data[0]);
-    showData(data)
-  }
+    for (let i = 0; i < data.length; i++) {
+        showData(data[i]);
+  }}
+
   getData();
 
   function showData(data) {
-    const div = `<div class="" style="background-image: url(${data[0].urls.regular});"></div>`;
-  galleryContainer.insertAdjacentHTML("beforeend", div);
+    const div = `<div class="container-img" style="background-image: url(${data.urls.regular});"></div>`;
+  galleryContainer.insertAdjacentHTML("beforeend", div1);
   }
 
   
