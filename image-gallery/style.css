@@ -1,11 +1,48 @@
+.search {
+    width: 250px;
+    margin-bottom: 2rem;
+    padding: 15px;
+    font-size: x-large;
+    border: 2px solid red;
+}
+
 .container {
     display: grid;
-    grid-template: 100px / 1fr 1fr 1fr;
-    grid-auto-rows: 100px;
-    background-image: url();
+    grid-template: 250px / 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    gap: 2%;
 }
-/* 
-.container  {
-    width: 100%;
-    height: auto;
-} */
+
+.container-img  {
+    background-size: cover;
+    border: 2px solid red;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto 0;
+    padding: 20px 0 0;
+    background-color: #2e7cdf;
+  }
+  
+  .footer-text {
+    padding-bottom: 15px;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: clamp(16px, 1.31vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  .footer-rs-logo {
+    width: 134px;
+    height: 50px;
+    margin: 0 0 20px 0;
+    background-image: url("./images/rs-school-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
