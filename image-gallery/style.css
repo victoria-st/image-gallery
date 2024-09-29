@@ -1,9 +1,22 @@
-.search {
+.search-field {
+    display: flex;
     width: 250px;
     margin-bottom: 2rem;
     padding: 15px;
     font-size: x-large;
     border: 2px solid red;
+}
+
+.search-button {
+    width: fit-content;
+    margin: 1rem;
+    padding: 10px;
+    font-size: large;
+    border: 2px solid red;
+}
+
+.search-button:hover {
+    cursor: pointer;
 }
 
 .container {
@@ -15,7 +28,7 @@
 
 .container-img  {
     background-size: cover;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .footer {
